@@ -1,0 +1,121 @@
+@import './../../settings/settings.sass'
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap')
+
+.element-html-container
+    // position: relative
+    // z-index: 2
+    margin: 0
+    padding: 0
+
+.element-html
+    background-image: url(./../../assets/images/img10.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    height: 100%
+    width: 100%
+    position: absolute
+    display: grid
+    grid-template: 1fr .75fr 0.25fr / 1fr 1fr
+
+body
+    font-family: 'Jost', sans-serif
+    font-weight: 400
+
+.header-audi > h1
+    text-transform: uppercase
+    font-weight: 400
+    color: #faf6f0
+    line-height: .8
+    text-align: center
+    margin-bottom: 20px
+
+.header-audi
+    padding: 0 10px
+    display: flex
+    align-items: center
+    flex-direction: column
+
+.body-text > p
+    color: #096a69
+    line-height: 1
+    margin: 5px
+
+.disclaimer > h2
+    color: #2e2e2e
+    text-align: center
+    font-size: .6em
+    font-weight: 400
+    letter-spacing: 0px
+    line-height: 1
+
+button.audi
+    font-family: 'Jost', sans-serif
+    padding: 8px 19px 10px
+    border: 1px solid #37918f
+    border-radius: 20px
+    background-color: #0a7d7b
+    color: #faf6f0
+    margin: 0 0 10px
+    font-size: .8em
+    transition-duration: 0.3s
+    z-index: 10
+
+    &:hover
+        border: 1px solid #4ab3b1
+        color: #ffffff
+
+    &:active
+        background-color: #119492
+        color: #ffffff
+
+.disclaimer
+    grid-column-start: 1
+    grid-column-end: 3
+    padding: 0 40px 30px
+
+// Mobile
+@media screen and (orientation: portrait)
+    .element-html-container
+        width: 100vw
+        height: 100vw
+    .header-audi > h1
+        font-size: 9vw
+        letter-spacing: -1.1vw
+    .body-text
+        padding: 5vw 3vw 0 14vw
+    .body-text > p
+        font-size: 2.5vw // .65em
+        line-height: 1
+    .disclaimer
+        font-size: 3vw
+
+@media screen and (orientation: landscape)
+    .element-html-container
+        width: 100vh
+        height: 100vh
+    .header-audi > h1
+        font-size: 9vh
+        letter-spacing: -1.1vh
+    .body-text
+        padding: 6vh 5vh 0 13vh
+    .body-text > p
+        font-size: 2.5vh // .65em
+        line-height: 1
+    .disclaimer
+        font-size: 3vh
+
+// Tablet+
+@media (min-width: $breakpoint-tablet)
+    .element-html-container
+        width: $width
+        height: 600px
+    .header-audi > h1
+        font-size: 3.6em
+        letter-spacing: -7px
+    .body-text
+        padding: 60px 20px 0 90px
+    .body-text > p
+        font-size: .8em
+    .disclaimer
+        font-size: .5em

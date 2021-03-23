@@ -1,0 +1,157 @@
+@import './../../settings/settings.sass'
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap')
+
+.element-html-container2
+    // position: relative
+    margin: 0
+    padding: 0
+
+.element-html2
+    background-color: #010101
+    height: 100%
+    width: 100%
+    position: absolute
+    // position: relative
+    display: grid
+    grid-template-columns: 100%
+    grid-template-rows: .6fr 1fr .4fr .2fr
+
+body
+    font-family: 'Jost', sans-serif
+    font-weight: 400
+
+.header-audi2 h1, .header2-audi2 h1
+    text-transform: uppercase
+    font-weight: 400
+    color: #b2c3d7
+    line-height: .75
+    text-align: center
+
+.header-audi2
+    max-height: auto
+
+.header2-audi2
+    padding: 0 50px 0
+    margin: 10px 0
+
+.body-text2 > p
+    color: #b2c3d7
+    line-height: 1
+    margin: 5px
+
+.button-and-body
+    background-image: url(./../../assets/images/img12b.jpg)
+    background-size: contain
+    background-repeat: no-repeat
+    padding: 0 9%
+    display: grid
+    grid-template-columns: 1fr .8fr
+    grid-template-rows: 1fr .5fr
+
+.filler-audi2
+    // width: 50%
+
+.disclaimer2 > h2
+    color: #b2c3d7
+    text-align: center
+    font-size: 1em
+    font-weight: 400
+    letter-spacing: 0px
+    line-height: 1
+
+button.audi2
+    font-family: 'Jost', sans-serif
+    padding: 8px 29px 10px
+    border: 1px solid #6b7f97
+    border-radius: 20px
+    background-color: #4c5f75
+    color: #faf6f0
+    font-size: .8em
+    transition-duration: 0.3s
+    justify-self: start
+    align-self: end
+    // margin-bottom: 16px
+    z-index: 10
+
+    &:hover
+        border: 1px solid #a2c8f3
+        background-color: #586e86
+        color: #ffffff
+
+    &:active
+        background-color: #5d89bb
+        color: #ffffff
+
+.disclaimer2
+    padding: 0 40px 30px
+
+// Mobile portrait AND landscape
+.header-audi2
+    padding: 15px 42px 2px
+.header2-audi2
+    padding: 0 40px 0
+    margin: 0 0 10px
+.button-and-body
+    background-position: 101% center
+    padding: 0 4%
+    grid-template-columns: 1fr .8fr
+    grid-template-rows: 1fr .5fr
+.body-text2 > p
+    font-size: 2.9vw // .65em
+    line-height: 1
+button.audi2
+    align-self: start
+
+// Mobile
+@media screen and (orientation: portrait)
+    .element-html-container2
+        width: 100vw
+        height: 100vw
+    .header-audi2 h1, .header2-audi2 h1
+        font-size: 13vw
+        letter-spacing: -1.1vw
+    .button-and-body
+        height: 45vw
+    .body-text2 > p
+        font-size: 2.9vw // .65em
+    .body-text2
+        padding: 1vw 0 0 0
+    .disclaimer2
+        font-size: 1.5vw
+@media screen and (orientation: landscape)
+    .element-html-container2
+        width: 100vh
+        height: 100vh
+    .header-audi2 h1, .header2-audi2 h1
+        font-size: 13vh
+        letter-spacing: -1.1vh
+    .button-and-body
+        height: 45vh
+    .body-text2 > p
+        font-size: 2.9vh // .65em
+    .body-text2
+        padding: 1vh 0 0 0
+    .disclaimer2
+        font-size: 1.5vh
+// Tablet+
+@media (min-width: $breakpoint-tablet)
+    .element-html-container2
+        width: $width
+        height: 600px
+    .header-audi2
+        padding: 30px 50px 10px
+    .header-audi2 > h1, .header2-audi2 > h1
+        font-size: 5.9em
+        letter-spacing: -12px
+        padding: 0
+    .button-and-body
+        background-position: 81% center
+        height: 110%
+        padding: 0 9%
+    .body-text2
+        padding: 15px 0
+    .body-text2 > p
+        font-size: .8em
+    .disclaimer2
+        font-size: .5em

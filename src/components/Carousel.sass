@@ -1,0 +1,40 @@
+@import './../settings/settings.sass'
+
+*
+    margin: 0
+    padding: 0
+
+.outer-container
+    width: 100vw
+    height: auto
+    // border: 2px grey solid
+
+.carousel
+    display: flex
+    margin: 0 auto
+    overflow: hidden
+    position: relative
+    // prevent vertical touch:
+    -ms-touch-action: pan-x
+    touch-action: pan-x
+
+    // border: 3px solid red
+
+button:focus
+    outline: none
+
+// Mobile
+@media screen and (orientation: portrait)
+    .carousel
+        width: 100vw
+        height: 100vw
+@media screen and (orientation: landscape)
+    .carousel
+        width: 100vh
+        height: 100vh
+
+// Tablet+
+@media (min-width: $breakpoint-tablet)
+    .carousel
+        width: $width
+        height: $height

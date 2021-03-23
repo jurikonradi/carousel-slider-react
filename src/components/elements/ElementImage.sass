@@ -1,0 +1,34 @@
+@import './../../settings/settings.sass'
+
+.element
+    padding: 0
+    margin: 0
+
+// Mobile
+@media screen and (orientation: portrait)
+    img
+        width: 100vw
+        height: auto
+
+    .element-img-container
+        width: 100vw
+        height: auto
+
+@media screen and (orientation: landscape)
+    img
+        width: auto
+        height: 100vh
+
+    .element-img-container
+        width: auto
+        height: 100vh
+
+// Tablet+
+@media (min-width: $breakpoint-tablet)
+    img
+        width: $width
+        height: auto
+
+    .element-img-container
+        width: $width
+        height: auto

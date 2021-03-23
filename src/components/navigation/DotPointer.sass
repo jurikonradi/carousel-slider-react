@@ -1,0 +1,26 @@
+@import './../../settings/colours.sass'
+
+.button-dot
+    border: none
+    background: none
+    cursor: pointer
+
+.dot-pointer
+    width: 6px
+    height: 6px
+    border-radius: 50%
+    background-color: $dot
+    background-clip: padding-box
+    border: 5px solid transparent
+    display: block
+    box-sizing: content-box
+
+.dot-transparent
+    opacity: .4
+
+.dot-transparent:hover
+    opacity: 1
+    background-color: $dot-hover
+
+.dot-transparent:active
+    background-color: #fff
